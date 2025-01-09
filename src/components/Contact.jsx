@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Box, Typography, TextField, Button, Container, Grid, Link } from '@mui/material';
+import { Box, Typography, TextField, Button, Container, Grid } from '@mui/material';
+import { Link } from 'react-router-dom'; // Import Link from React Router
 
 function ContactSection() {
     const [formData, setFormData] = useState({
@@ -35,7 +36,6 @@ function ContactSection() {
     return (
         <Box sx={{ background: 'linear-gradient(135deg, #121212, #1a237e)', py: 5 }}>
             <Container>
-                {/* Contact Section Title and Intro */}
                 <Typography variant="h3" color="white" gutterBottom align="center">
                     Get In Touch
                 </Typography>
@@ -43,7 +43,6 @@ function ContactSection() {
                     Have a project in mind? Feel free to reach out!
                 </Typography>
 
-                {/* Personal Information and Contact Form */}
                 <Grid container spacing={3} justifyContent="center" alignItems="center">
                     <Grid item xs={12} md={6}>
                         <Typography variant="h6" color="white">
@@ -55,8 +54,6 @@ function ContactSection() {
                         <Typography variant="body2" color="white" paragraph>
                             I'm always interested in hearing about new projects and opportunities. Let's collaborate to bring your ideas to life!
                         </Typography>
-
-                        {/* Contact Info */}
                         <Typography variant="body2" color="text.secondary" paragraph>
                             <strong>Email:</strong>{' '}
                             <a href="mailto:kbrianngetich@gmail.com" style={{ color: '#00bcd4' }}>
@@ -72,7 +69,6 @@ function ContactSection() {
                     </Grid>
 
                     <Grid item xs={12} md={6}>
-                        {/* Contact Form */}
                         <Box
                             component="form"
                             onSubmit={handleSubmit}
@@ -146,39 +142,38 @@ function ContactSection() {
                     </Grid>
                 </Grid>
 
-                {/* Quick Links */}
                 <Box sx={{ mt: 5, textAlign: 'center' }}>
                     <Typography variant="h6" color="white" gutterBottom>
                         Quick Links
                     </Typography>
                     <Grid container spacing={3} justifyContent="center">
                         <Grid item>
-                            <Link href="#home" color="text.secondary">
+                            <Link to="/" style={{ color: '#00bcd4', textDecoration: 'none' }}>
                                 Home
                             </Link>
                         </Grid>
                         <Grid item>
-                            <Link href="#about" color="text.secondary">
+                            <Link to="/about" style={{ color: '#00bcd4', textDecoration: 'none' }}>
                                 About
                             </Link>
                         </Grid>
                         <Grid item>
-                            <Link href="#skills" color="text.secondary">
-                                SkillSet
+                            <Link to="/skills" style={{ color: '#00bcd4', textDecoration: 'none' }}>
+                                Skills
                             </Link>
                         </Grid>
                         <Grid item>
-                            <Link href="#projects" color="text.secondary">
+                            <Link to="/projects" style={{ color: '#00bcd4', textDecoration: 'none' }}>
                                 Projects
                             </Link>
                         </Grid>
                         <Grid item>
-                            <Link href="#services" color="text.secondary">
+                            <Link to="/services" style={{ color: '#00bcd4', textDecoration: 'none' }}>
                                 Services
                             </Link>
                         </Grid>
                         <Grid item>
-                            <Link href="#contact" color="text.secondary">
+                            <Link to="/contact" style={{ color: '#00bcd4', textDecoration: 'none' }}>
                                 Contact
                             </Link>
                         </Grid>
