@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { AppBar, Toolbar, Button, Menu, MenuItem, Box, Typography } from '@mui/material';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom'; // Import Link from React Router
 
 function Navbar() {
     const [scrolled, setScrolled] = useState(false);
@@ -16,12 +17,12 @@ function Navbar() {
     }, []);
 
     const navLinks = [
-        { label: 'Home', href: '/' },
-        { label: 'About', href: '/about' },
-        { label: 'Skills', href: '/skills' },
-        { label: 'Projects', href: '/projects' },
-        { label: 'Services', href: '/services' },
-        { label: 'Contact', href: '/contact' },
+        { label: 'Home', to: '/' },
+        { label: 'About', to: '/about' },
+        { label: 'Skills', to: '/skills' },
+        { label: 'Projects', to: '/projects' },
+        { label: 'Services', to: '/services' },
+        { label: 'Contact', to: '/contact' },
     ];
 
     const handleMenuOpen = (event) => {
@@ -129,8 +130,8 @@ function Navbar() {
                             <MenuItem
                                 key={index}
                                 onClick={handleMenuClose}
-                                component="a"
-                                href={link.href}
+                                component={Link} // Use React Router Link
+                                to={link.to} // Use "to" for navigation
                                 sx={{
                                     color: 'white',
                                     '&:hover': {
