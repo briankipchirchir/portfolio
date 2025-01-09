@@ -32,37 +32,43 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={
-            <>
-              <ScrollUpSection>
-                <HeroSection />
-              </ScrollUpSection>
-              <ScrollUpSection>
-                <AboutSection />
-              </ScrollUpSection>
-              <ScrollUpSection>
-                <ProjectsSection />
-              </ScrollUpSection>
-              <ScrollUpSection>
-                <SkillsSection />
-              </ScrollUpSection>
-              <ScrollUpSection>
-                <Services />
-              </ScrollUpSection>
-              <ScrollUpSection>
-                <ContactSection />
-              </ScrollUpSection>
-            </>
-          } />
-          <Route path="/contact" element={<ContactSection />} />
-          <Route path="/skills" element={<SkillsSection/>} />
-          <Route path="/about" element={<AboutSection />} />
-          <Route path="/projects" element={<ProjectsSection />} />
-          <Route path="/services" element={<Services/>} />
-        </Routes>
-        <Footer />
+        {/* App layout using Flexbox */}
+        <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+          <Navbar />
+          {/* Main content with flex-grow to push the footer to the bottom */}
+          <div style={{ flexGrow: 1 }}>
+            <Routes>
+              <Route path="/" element={
+                <>
+                  <ScrollUpSection>
+                    <HeroSection />
+                  </ScrollUpSection>
+                  <ScrollUpSection>
+                    <AboutSection />
+                  </ScrollUpSection>
+                  <ScrollUpSection>
+                    <ProjectsSection />
+                  </ScrollUpSection>
+                  <ScrollUpSection>
+                    <SkillsSection />
+                  </ScrollUpSection>
+                  <ScrollUpSection>
+                    <Services />
+                  </ScrollUpSection>
+                  <ScrollUpSection>
+                    <ContactSection />
+                  </ScrollUpSection>
+                </>
+              } />
+              <Route path="/contact" element={<ContactSection />} />
+              <Route path="/skills" element={<SkillsSection />} />
+              <Route path="/about" element={<AboutSection />} />
+              <Route path="/projects" element={<ProjectsSection />} />
+              <Route path="/services" element={<Services />} />
+            </Routes>
+          </div>
+          <Footer />
+        </div>
       </Router>
     </ThemeProvider>
   );
