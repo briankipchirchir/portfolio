@@ -53,6 +53,9 @@ function App() {
             </>
           } />
           <Route path="/contact" element={<ContactSection />} />
+          <Route path="/skills" element={<SkillsSection/>} />
+          <Route path="/about" element={<AboutSection />} />
+          <Route path="/projects" element={<ProjectsSection />} />
         </Routes>
         <Footer />
       </Router>
