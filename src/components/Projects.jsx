@@ -2,20 +2,22 @@ import React from 'react';
 import { Typography, Container, Grid, Card, CardContent, CardMedia, Button, Box } from '@mui/material';
 import { Launch } from '@mui/icons-material';
 import hosi from '../assets/hospital.jpg';
+import book from '../assets/book.jpg';
+import Education from '../assets/education.jpg';
 
 function ProjectsSection() {
     const projects = [
         {
             title: 'Bookly - Book Collection Manager',
-            description: 'A platform to organize and manage book collections. Integrated with Google Books API.',
-            image: 'https://via.placeholder.com/150',
-            link: 'https://example.com/bookly',
+            description: 'A platform to organize and manage book collections. Integrated with Google Books API,Utilized React for the frontend.',
+            image: book,
+            link: 'https://phase2-project-my-books-app.vercel.app/',
         },
         {
-            title: 'Car Selling Platform',
-            description: 'A responsive platform for buying and selling cars online, built with React.',
-            image: '',
-            link: 'https://example.com/car-platform',
+            title: 'Education africa',
+            description: 'A responsive platform for education exhibition,attendees could register as individuals or institutions .',
+            image: Education,
+            link: 'https://www.exploreeducationafrica.com/',
         },
         {
             title: 'Hospital Management System',
