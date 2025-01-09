@@ -10,6 +10,7 @@ import ContactSection from './components/Contact';
 import Footer from './components/Footer';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import ScrollUpSection from './components/ScrollUpSection'; // Import the ScrollUpSection component
+import Services from './components/Services';
 
 // Create theme
 const theme = createTheme({
@@ -48,6 +49,9 @@ function App() {
                 <SkillsSection />
               </ScrollUpSection>
               <ScrollUpSection>
+                <Services />
+              </ScrollUpSection>
+              <ScrollUpSection>
                 <ContactSection />
               </ScrollUpSection>
             </>
@@ -56,6 +60,7 @@ function App() {
           <Route path="/skills" element={<SkillsSection/>} />
           <Route path="/about" element={<AboutSection />} />
           <Route path="/projects" element={<ProjectsSection />} />
+          <Route path="/services" element={<Services/>} />
         </Routes>
         <Footer />
       </Router>
