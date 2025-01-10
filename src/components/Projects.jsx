@@ -56,7 +56,7 @@ function ProjectsSection() {
                         textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)',
                     }}
                 >
-                    Featured Work
+                    Projects
                 </Typography>
                 <Grid container spacing={4}>
                     {projects.map((project, index) => (
