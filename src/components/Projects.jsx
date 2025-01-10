@@ -4,9 +4,23 @@ import { Launch } from '@mui/icons-material';
 import hosi from '../assets/hospital.jpg';
 import book from '../assets/book.jpg';
 import Education from '../assets/education.jpg';
+import parcel from '../assets/matwana.jpg';
 
 function ProjectsSection() {
     const projects = [
+        {
+            title: 'Hospital Management System',
+            description: 'A system to streamline hospital operations, featuring appointment management and more.',
+            image: hosi,
+            link: 'https://afya-mis-project.vercel.app/',
+        },
+        {
+            title: 'Matwana Parcel Tracking System',
+            description: 'A robust parcel tracking platform designed to enhance efficiency and accuracy in delivery operations. Built with a Flask backend for seamless data management and API integration, it offers real-time updates and intuitive user interactions.',
+            image: parcel,
+            link: 'https://matwana-frontend-ndfr.onrender.com/',
+        },
+        
         {
             title: 'Bookly - Book Collection Manager',
             description: 'A platform to organize and manage book collections. Integrated with Google Books API,Utilized React for the frontend.',
@@ -18,13 +32,7 @@ function ProjectsSection() {
             description: 'A responsive platform for education exhibition,attendees could register as individuals or institutions .',
             image: Education,
             link: 'https://www.exploreeducationafrica.com/',
-        },
-        {
-            title: 'Hospital Management System',
-            description: 'A system to streamline hospital operations, featuring appointment management and more.',
-            image: hosi,
-            link: 'https://afya-mis-project.vercel.app/',
-        },
+        }
     ];
 
     return (
