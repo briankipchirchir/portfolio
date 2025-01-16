@@ -2,7 +2,7 @@ import React from 'react';
 import { Typography, Box, Container, Grid, Button } from '@mui/material';
 import { Mail, Phone } from '@mui/icons-material';
 import { motion } from 'framer-motion';
-import brianImage from '../assets/brian.jpg';  // Ensure the path is correct
+import image from '../assets/new.jpg';
 
 function AboutSection() {
     return (
@@ -49,7 +49,7 @@ function AboutSection() {
                 >
                     <Box sx={{ display: 'flex', justifyContent: 'center', mb: 4 }}>
                         <img
-                            src={brianImage} // Update the path to your image
+                            src={image} // Update the path to your image
                             alt="Brian Kipchirchir"
                             style={{
                                 width: '250px', // Adjusted size for larger image
