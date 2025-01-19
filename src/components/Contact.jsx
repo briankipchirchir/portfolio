@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 import { Box, Typography, TextField, Button, Container, Grid } from '@mui/material';
-import { Link } from 'react-router-dom'; // Import Link from React Router
+import { Link } from 'react-router-dom';
 
 function ContactSection() {
     const [formData, setFormData] = useState({
@@ -10,6 +11,7 @@ function ContactSection() {
     });
 
     const [successMessage, setSuccessMessage] = useState('');
+    const [errorMessage, setErrorMessage] = useState('');
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -21,16 +23,34 @@ function ContactSection() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
         if (!formData.name || !formData.email || !formData.message) {
-            alert('Please fill out all fields!');
+            setErrorMessage('Please fill out all fields!');
             return;
         }
-        setSuccessMessage('Thank you for your message! I will get back to you soon.');
-        setFormData({
-            name: '',
-            email: '',
-            message: '',
-        });
+
+        // Use your Email.js service and template IDs
+        const serviceID = 'service_3uuvfpi'; // Replace with your Email.js Service ID
+        const templateID = 'template_kl8qbkv'; // Replace with your Email.js Template ID
+        const publicKey = 'nOAeVTkhO-nqV4TW4'; // Replace with your Email.js Public Key
+
+        emailjs
+            .send(serviceID, templateID, formData, publicKey)
+            .then((response) => {
+                console.log('Email sent successfully!', response.status, response.text);
+                setSuccessMessage('Thank you for your message! I will get back to you soon.');
+                setErrorMessage('');
+                setFormData({
+                    name: '',
+                    email: '',
+                    message: '',
+                });
+            })
+            .catch((error) => {
+                console.error('Failed to send email:', error);
+                setSuccessMessage('');
+                setErrorMessage('Failed to send email. Please try again.');
+            });
     };
 
     return (
@@ -136,6 +156,14 @@ function ContactSection() {
                                     sx={{ color: 'green', mt: 2, textAlign: 'center' }}
                                 >
                                     {successMessage}
+                                </Typography>
+                            )}
+                            {errorMessage && (
+                                <Typography
+                                    variant="body1"
+                                    sx={{ color: 'red', mt: 2, textAlign: 'center' }}
+                                >
+                                    {errorMessage}
                                 </Typography>
                             )}
                         </Box>

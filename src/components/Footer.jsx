@@ -37,13 +37,13 @@ function Footer() {
                 Connect with me:
               </Typography>
               <Box sx={{ display: 'flex', justifyContent: 'center', gap: 3, mt: 1 }}>
-                <Link href="https://github.com/yourusername" target="_blank" sx={{ color: 'text.primary' }}>
+                <Link href="https://github.com/briankipchirchir" target="_blank" sx={{ color: 'text.primary' }}>
                   <GitHub fontSize="large" />
                 </Link>
-                <Link href="https://www.linkedin.com/in/yourusername" target="_blank" sx={{ color: 'text.primary' }}>
+                <Link href="https://www.linkedin.com/in/brian-kipchirchir-465609235/" target="_blank" sx={{ color: 'text.primary' }}>
                   <LinkedIn fontSize="large" />
                 </Link>
-                <Link href="mailto:your.email@example.com" sx={{ color: 'text.primary' }}>
+                <Link href="kbrianngetich@gmail.com" sx={{ color: 'text.primary' }}>
                   <Email fontSize="large" />
                 </Link>
               </Box>
