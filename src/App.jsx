@@ -46,15 +46,15 @@ function App() {
                   <ScrollUpSection>
                     <AboutSection />
                   </ScrollUpSection>
-                  <ScrollUpSection>
+                  
                     <ProjectsSection />
-                  </ScrollUpSection>
+                  
                   <ScrollUpSection>
                     <SkillsSection />
                   </ScrollUpSection>
-                  <ScrollUpSection>
+                  
                     <Services />
-                  </ScrollUpSection>
+                  
                   <ScrollUpSection>
                     <ContactSection />
                   </ScrollUpSection>
