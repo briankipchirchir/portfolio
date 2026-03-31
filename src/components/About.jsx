@@ -166,7 +166,7 @@ function AboutSection() {
                                     {[
                                         { school: 'Kenyatta University', degree: 'BSc. Computer Science' },
                                         { school: 'Moringa School', degree: 'Software Development Intensive · Jun–Nov 2024' },
-                                        {school:'Andela', degree:'Linux and Kubernetes .present'}
+                                        {school:'Andela', degree:'Linux and Kubernetes fundamentals -present'}
                                     ].map(({ school, degree }) => (
                                         <Box key={school} sx={{ pl: 2, borderLeft: '2px solid rgba(144,202,249,0.2)' }}>
                                             <Typography variant="body2" sx={{ color: 'white', fontWeight: 600 }}>{school}</Typography>
