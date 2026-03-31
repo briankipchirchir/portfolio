@@ -21,7 +21,7 @@ const skillCategories = [
     {
         label: 'DevOps & Tools',
         color: '#ffcc80',
-        skills: ['Docker', 'Kubernetes', 'Docker Compose', 'Kafka', 'RabbitMq', 'Eureka', 'API Gateway', 'Git', 'Postman', 'Swagger', 'Jira', 'Bamboo'],
+        skills: ['Docker', 'Kubernetes', 'Docker Compose', 'Kafka', 'Rabbitmq', 'Eureka', 'API Gateway', 'Git', 'Postman', 'Swagger', 'Jira', 'Bamboo'],
     },
     {
         label: 'Databases',
