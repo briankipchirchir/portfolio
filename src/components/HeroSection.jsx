@@ -174,7 +174,7 @@ function HeroSection() {
                             lineHeight: 1.8,
                         }}
                     >
-                        Building scalable distributed systems and modern web applications with Java, Spring Boot, React, and Angular. Currently at Turnkey Africa & Transformers Tech Kids.
+                        Building scalable distributed systems and modern web applications with Java, Spring Boot, React, and Angular.
                     </Typography>
                 </motion.div>
 

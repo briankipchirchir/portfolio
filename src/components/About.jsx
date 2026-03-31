@@ -166,7 +166,7 @@ function AboutSection() {
                                     {[
                                         { school: 'Kenyatta University', degree: 'BSc. Computer Science' },
                                         { school: 'Moringa School', degree: 'Software Development Intensive · Jun–Nov 2024' },
-                                        {school:'Andela', degree:'Linux and Kubernetes'}
+                                        {school:'Andela', degree:'Linux and Kubernetes .present'}
                                     ].map(({ school, degree }) => (
                                         <Box key={school} sx={{ pl: 2, borderLeft: '2px solid rgba(144,202,249,0.2)' }}>
                                             <Typography variant="body2" sx={{ color: 'white', fontWeight: 600 }}>{school}</Typography>
@@ -178,7 +178,7 @@ function AboutSection() {
                         </motion.div>
 
                         {/* Experience */}
-                        <motion.div {...fadeUp(0.5)}>
+                        {/* <motion.div {...fadeUp(0.5)}>
                             <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 2 }}>
                                 <Work sx={{ color: '#90caf9', fontSize: '1.1rem' }} />
                                 <Typography variant="overline" sx={{ color: '#90caf9', letterSpacing: 3, fontSize: '0.7rem', fontWeight: 700 }}>
@@ -214,7 +214,7 @@ function AboutSection() {
                                     </Box>
                                 ))}
                             </Box>
-                        </motion.div>
+                        </motion.div> */}
                     </Grid>
                 </Grid>
             </Container>

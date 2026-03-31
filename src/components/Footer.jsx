@@ -96,9 +96,7 @@ function Footer() {
                     <Typography variant="caption" sx={{ color: 'rgba(255,255,255,0.2)', fontSize: '0.75rem' }}>
                         © {new Date().getFullYear()} Brian Kipchirchir Ngetich. All rights reserved.
                     </Typography>
-                    <Typography variant="caption" sx={{ color: 'rgba(255,255,255,0.2)', fontSize: '0.75rem' }}>
-                        Built with React & Material UI
-                    </Typography>
+                   
                 </Box>
             </Container>
         </Box>
