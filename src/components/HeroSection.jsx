@@ -9,6 +9,7 @@ const roles = [
     'Microservices Architect',
     'Spring Boot Engineer',
     'React Developer',
+    'Angular Developer',
 ];
 
 function HeroSection() {
@@ -174,7 +175,7 @@ function HeroSection() {
                             lineHeight: 1.8,
                         }}
                     >
-                        Building scalable distributed systems and modern web applications with Java, Spring Boot, React and Angular.
+                        Building scalable distributed systems and modern web applications with Java,python, Spring Boot, React and Angular.
                     </Typography>
                 </motion.div>
 
