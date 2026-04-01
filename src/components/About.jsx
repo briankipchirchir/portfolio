@@ -2,7 +2,7 @@ import React from 'react';
 import { Typography, Box, Container, Grid, Button, Chip } from '@mui/material';
 import { Mail, Phone, LocationOn, OpenInNew, Work, School } from '@mui/icons-material';
 import { motion } from 'framer-motion';
-import image from '../assets/new.jpg';
+import image from '../assets/new.png';
 
 const fadeUp = (delay = 0) => ({
     initial: { opacity: 0, y: 30 },
@@ -178,7 +178,7 @@ function AboutSection() {
                         </motion.div>
 
                         {/* Experience */}
-                        {/* <motion.div {...fadeUp(0.5)}>
+                        <motion.div {...fadeUp(0.5)}>
                             <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 2 }}>
                                 <Work sx={{ color: '#90caf9', fontSize: '1.1rem' }} />
                                 <Typography variant="overline" sx={{ color: '#90caf9', letterSpacing: 3, fontSize: '0.7rem', fontWeight: 700 }}>
@@ -214,7 +214,7 @@ function AboutSection() {
                                     </Box>
                                 ))}
                             </Box>
-                        </motion.div> */}
+                        </motion.div>
                     </Grid>
                 </Grid>
             </Container>
