@@ -148,7 +148,7 @@ function AboutSection() {
                         <motion.div {...fadeUp(0.3)}>
                             <Typography variant="body1" sx={{ color: 'rgba(255,255,255,0.65)', lineHeight: 2, fontSize: '1.05rem', mb: 4 }}>
                                 I'm <span style={{ color: '#90caf9', fontWeight: 700 }}>Brian Kipchirchir Ngetich</span>, a results-driven Software Developer with expertise in designing and building full-stack and distributed systems.
-                                Skilled in developing scalable microservices, RESTful APIs, and responsive frontend applications.
+                                Skilled in developing scalable microservices, RESTful APIs and responsive frontend applications.
                                 Experienced in Agile collaboration and containerized cloud-native environments.
                             </Typography>
                         </motion.div>
